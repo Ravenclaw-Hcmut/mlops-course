@@ -8,7 +8,7 @@ from pyspark.sql import DataFrame
 from data_sources import driver_stats_batch_source, driver_stats_stream_source
 from entities import driver
 
-driver_stats_view = FeatureView(
+driver_stats_view = FeatureView( ## table - bang feature
     name="driver_stats",
     description="driver features",
     entities=[driver],
